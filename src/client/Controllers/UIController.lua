@@ -141,23 +141,23 @@ buttonLayout.Padding = UDim.new(0, 10)
 buttonLayout.Parent = buttonContainer
 
 -- Create buttons
-UIController.CreateButton(buttonContainer, "Pets", "ðŸ¾", function()
+UIController.CreateButton(buttonContainer, "Pets", "🐾", function()
 UIController.OpenPetsUI()
 end)
 
-UIController.CreateButton(buttonContainer, "Hatch", "ðŸ¥š", function()
+UIController.CreateButton(buttonContainer, "Hatch", "🥚", function()
 UIController.OpenHatchUI()
 end)
 
-UIController.CreateButton(buttonContainer, "Quests", "ðŸ“œ", function()
+UIController.CreateButton(buttonContainer, "Quests", "📜", function()
 UIController.OpenQuestsUI()
 end)
 
-UIController.CreateButton(buttonContainer, "Shop", "ðŸ›’", function()
+UIController.CreateButton(buttonContainer, "Shop", "🛒", function()
 UIController.OpenShopUI()
 end)
 
-UIController.CreateButton(buttonContainer, "Guild", "ðŸ°", function()
+UIController.CreateButton(buttonContainer, "Guild", "🏰", function()
 UIController.OpenGuildUI()
 end)
 end
@@ -352,11 +352,8 @@ end
 -- Open Quests UI
 function UIController.OpenQuestsUI()
 print("Opening Quests UI")
-UIController.ShowNotification({
-Title = "Quests",
-Message = "Quest UI coming soon!",
-Type = "Info"
-})
+local QuestUI = require(script.Parent.QuestUI)
+QuestUI.Show()
 end
 
 -- Open Shop UI

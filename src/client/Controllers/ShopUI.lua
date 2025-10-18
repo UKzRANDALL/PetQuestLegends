@@ -111,7 +111,7 @@ function ShopUI.CreateHeader(parent)
     title.Size = UDim2.new(0, 400, 1, 0)
     title.Position = UDim2.new(0, 20, 0, 0)
     title.BackgroundTransparency = 1
-    title.Text = "🛒 SHOP"
+    title.Text = "SHOP"
     title.TextColor3 = COLORS.Text
     title.TextSize = 36
     title.Font = Enum.Font.GothamBold
@@ -125,7 +125,7 @@ function ShopUI.CreateHeader(parent)
     closeButton.Position = UDim2.new(1, -60, 0, 10)
     closeButton.BackgroundColor3 = Color3.fromRGB(200, 50, 50)
     closeButton.BorderSizePixel = 0
-    closeButton.Text = "✕"
+    closeButton.Text = "X"
     closeButton.TextColor3 = COLORS.Text
     closeButton.TextSize = 28
     closeButton.Font = Enum.Font.GothamBold
@@ -475,7 +475,7 @@ function ShopUI.CreateShopItem(parent, config)
     buyButton.Position = UDim2.new(1, -195, 0.5, -25)
     buyButton.BackgroundColor3 = COLORS.Button
     buyButton.BorderSizePixel = 0
-    buyButton.Text = "💎 Buy for " .. config.Price .. " R$"
+    buyButton.Text = "Buy for " .. config.Price .. " Robux"
     buyButton.TextColor3 = COLORS.Text
     buyButton.TextSize = 18
     buyButton.Font = Enum.Font.GothamBold
@@ -492,7 +492,7 @@ function ShopUI.CreateShopItem(parent, config)
         end)
         
         if success and owned then
-            buyButton.Text = "✓ OWNED"
+            buyButton.Text = "ÃƒÆ’Ã‚Â¢Ãƒâ€¦Ã¢â‚¬Å“ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œ OWNED"
             buyButton.BackgroundColor3 = COLORS.Owned
             buyButton.Active = false
         end
@@ -509,13 +509,13 @@ function ShopUI.CreateShopItem(parent, config)
     
     -- Hover effects
     buyButton.MouseEnter:Connect(function()
-        if buyButton.Text ~= "✓ OWNED" then
+        if buyButton.Text ~= "ÃƒÆ’Ã‚Â¢Ãƒâ€¦Ã¢â‚¬Å“ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œ OWNED" then
             buyButton.BackgroundColor3 = COLORS.ButtonHover
             buyButton.Size = UDim2.new(0, 185, 0, 52)
         end
     end)
     buyButton.MouseLeave:Connect(function()
-        if buyButton.Text ~= "✓ OWNED" then
+        if buyButton.Text ~= "ÃƒÆ’Ã‚Â¢Ãƒâ€¦Ã¢â‚¬Å“ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œ OWNED" then
             buyButton.BackgroundColor3 = COLORS.Button
             buyButton.Size = UDim2.new(0, 180, 0, 50)
         end
