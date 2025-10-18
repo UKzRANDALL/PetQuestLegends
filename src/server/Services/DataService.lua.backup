@@ -7,7 +7,7 @@ local ServerScriptService = game:GetService("ServerScriptService")
 
 -- Note: ProfileService should be installed via Wally or manually added to ServerScriptService
 -- For this template, we'll create a mock version that can be replaced with the real ProfileService
-local ProfileService = require(script.Parent.ProfileService)
+local ProfileService = require(script.Parent.ProfileServiceMock)
 
 local RemoteManager = require(ReplicatedStorage.Modules.RemoteManager)
 local Utilities = require(ReplicatedStorage.Modules.Utilities)
