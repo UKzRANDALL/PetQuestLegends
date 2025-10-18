@@ -1,0 +1,42 @@
+# Roblox Studio
+*.rbxl
+*.rbxlx
+*.rbxm
+*.rbxmx
+
+# Rojo
+*.project.json.lock
+
+# OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Build artifacts
+build/
+dist/
+
+# Node modules (if using npm for tooling)
+node_modules/
+
+# Environment files
+.env
+.env.local
+
+# Personal notes
+notes.txt
+TODO.txt
